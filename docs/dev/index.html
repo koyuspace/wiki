@@ -1,0 +1,215 @@
+<!doctype html><html lang=en dir=ltr>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="Instructions on how to start developing for koyu.space.">
+<meta name=theme-color content="#FFFFFF"><meta property="og:title" content="Setting up a dev environment">
+<meta property="og:description" content="Instructions on how to start developing for koyu.space.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://example.org/docs/dev/"><meta property="article:section" content="docs">
+<meta property="article:modified_time" content="2021-09-21T23:44:27+02:00">
+<title>Setting up a dev environment | koyu.space Wiki</title>
+<link rel=manifest href=/manifest.json>
+<link rel=icon href=/favicon.png type=image/x-icon>
+<link rel=stylesheet href=/book.min.9ec09278e00f30349027dee8018db135110d6a123a2c2655421a9823ff3dbb85.css integrity="sha256-nsCSeOAPMDSQJ97oAY2xNRENahI6LCZVQhqYI/89u4U=" crossorigin=anonymous>
+<script defer src=/flexsearch.min.js></script>
+<script defer src=/en.search.min.dc41b823ec84609d9914dfc94e9822603f5ecf4af8ea24bb3b47dcd92c00dfab.js integrity="sha256-3EG4I+yEYJ2ZFN/JTpgiYD9ez0r46iS7O0fc2SwA36s=" crossorigin=anonymous></script>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin=anonymous>
+<a href=https://github.com/koyuspace/wiki class=social target=_blank><i class="fa fa-github" aria-hidden=true></i></a>
+</head>
+<body dir=ltr>
+<input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control>
+<main class="container flex">
+<aside class=book-menu>
+<div class=book-menu-content>
+<nav>
+<h2 class=book-brand>
+<a class="flex align-center" href=/><img src=/logo.svg alt=Logo><span>koyu.space Wiki</span>
+</a>
+</h2>
+<div class=book-search>
+<input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/>
+<div class="book-search-spinner hidden"></div>
+<ul id=book-search-results></ul>
+</div>
+<ul>
+<li>
+<a href=http://example.org/docs/events/>Events</a>
+</li>
+<li>
+<a href=http://example.org/docs/streaming/>Livestreaming on koyu.space</a>
+</li>
+<li>
+<a href=http://example.org/docs/services/>Services</a>
+</li>
+<li>
+<a href=http://example.org/docs/dev/ class=active>Setting up a dev environment</a>
+</li>
+</ul>
+</nav>
+<script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+</div>
+</aside>
+<div class=book-page>
+<header class=book-header>
+<div class="flex align-center justify-between">
+<label for=menu-control>
+<img src=/svg/menu.svg class=book-icon alt=Menu>
+</label>
+<strong>Setting up a dev environment</strong>
+<label for=toc-control>
+<img src=/svg/toc.svg class=book-icon alt="Table of Contents">
+</label>
+</div>
+<aside class="hidden clearfix">
+<nav id=TableOfContents>
+<ul>
+<li><a href=#pre-requisites>Pre-requisites</a>
+<ul>
+<li><a href=#system-repositorie>System repositorie</a></li>
+<li><a href=#system-packages>System packages</a></li>
+<li><a href=#installing-ruby>Installing Ruby</a></li>
+</ul>
+</li>
+<li><a href=#setup>Setup</a></li>
+<li><a href=#running>Running</a></li>
+<li><a href=#testing>Testing</a></li>
+</ul>
+</nav>
+</aside>
+</header>
+<article class=markdown><h1 id=setting-up-a-dev-environment>
+Setting up a dev environment
+<a class=anchor href=#setting-up-a-dev-environment>#</a>
+</h1>
+<h2 id=pre-requisites>
+Pre-requisites
+<a class=anchor href=#pre-requisites>#</a>
+</h2>
+<ul>
+<li>A machine running <strong>Ubuntu 20.04</strong> or later that you have root access to</li>
+</ul>
+<h3 id=system-repositorie>
+System repositorie
+<a class=anchor href=#system-repositorie>#</a>
+</h3>
+<h4 id=nodejs>
+Node.js
+<a class=anchor href=#nodejs>#</a>
+</h4>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>curl -sL https://deb.nodesource.com/setup_12.x | sudo bash -
+</code></pre></div><h4 id=yarn>
+Yarn
+<a class=anchor href=#yarn>#</a>
+</h4>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo <span style=color:#e6db74>&#34;deb https://dl.yarnpkg.com/debian/ stable main&#34;</span> | sudo tee /etc/apt/sources.list.d/yarn.list
+</code></pre></div><h3 id=system-packages>
+System packages
+<a class=anchor href=#system-packages>#</a>
+</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>apt update
+apt install -y <span style=color:#ae81ff>\
+</span><span style=color:#ae81ff></span>  imagemagick ffmpeg libpq-dev libxml2-dev libxslt1-dev file git-core <span style=color:#ae81ff>\
+</span><span style=color:#ae81ff></span>  g++ libprotobuf-dev protobuf-compiler pkg-config nodejs gcc autoconf <span style=color:#ae81ff>\
+</span><span style=color:#ae81ff></span>  bison build-essential libssl-dev libyaml-dev libreadline6-dev <span style=color:#ae81ff>\
+</span><span style=color:#ae81ff></span>  zlib1g-dev libncurses5-dev libffi-dev libgdbm-dev <span style=color:#ae81ff>\
+</span><span style=color:#ae81ff></span>  redis-server redis-tools postgresql postgresql-contrib <span style=color:#ae81ff>\
+</span><span style=color:#ae81ff></span>  yarn libidn11-dev libicu-dev libjemalloc-dev
+</code></pre></div><h3 id=installing-ruby>
+Installing Ruby
+<a class=anchor href=#installing-ruby>#</a>
+</h3>
+<p>We will be using rbenv to manage Ruby versions, because it’s easier to get the right versions and to update once a newer release comes out.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+cd ~/.rbenv <span style=color:#f92672>&amp;&amp;</span> src/configure <span style=color:#f92672>&amp;&amp;</span> make -C src
+echo <span style=color:#e6db74>&#39;export PATH=&#34;$HOME/.rbenv/bin:$PATH&#34;&#39;</span> &gt;&gt; ~/.bashrc
+echo <span style=color:#e6db74>&#39;eval &#34;$(rbenv init -)&#34;&#39;</span> &gt;&gt; ~/.bashrc
+exec bash
+git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+</code></pre></div><p>Once this is done, we can install the correct Ruby version:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>RUBY_CONFIGURE_OPTS<span style=color:#f92672>=</span>--with-jemalloc rbenv install 2.7.2
+rbenv global 2.7.4
+</code></pre></div><p>We’ll also need to install bundler:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>gem install bundler --no-document
+</code></pre></div><h2 id=setup>
+Setup
+<a class=anchor href=#setup>#</a>
+</h2>
+<p>Run following commands in the project directory <code>bundle install</code>, <code>yarn install</code>.</p>
+<p>In the development environment, koyu.space will use PostgreSQL as the currently signed-in Linux user using the <code>ident</code> method, which usually works out of the box. The one command you need to run is <code>rails db:setup</code> which will create the databases <code>mastodon_development</code> and <code>mastodon_test</code>, load the schema into them, and then create seed data defined in <code>db/seed.rb</code> in <code>mastodon_development</code>. The only seed data is an admin account with the credentials <code>admin@localhost:3000</code> / <code>mastodonadmin</code>.</p>
+<blockquote>
+<p>Please keep in mind, by default koyu.space will run on port 3000. If you configure a different port for it, the generated admin account will use that number.</p>
+</blockquote>
+<p>If <code>rails db:setup</code> gives you the Postgres error:</p>
+<pre><code>ActiveRecord::NoDatabaseError: FATAL:  role &quot;your_user_name&quot; does not exist
+</code></pre>
+<p>(where <code>your_user_name</code> is your username), then run:</p>
+<pre><code>sudo -u postgres createuser your_user_name --createdb
+</code></pre>
+<p>This will create the necessary Postgres user with the permission to create a database.</p>
+<h2 id=running>
+Running
+<a class=anchor href=#running>#</a>
+</h2>
+<p>There are multiple processes that need to be run for the full set of Mastodon’s functionality, although they can be selectively omitted. To run all of them with just one command, you can install Foreman with <code>gem install foreman --no-document</code> and then use:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-text data-lang=text>foreman start
+</code></pre></div><p>In the koyu.space directory. This will start processes defined in <code>Procfile.dev</code>, which will give you: A Rails server, a Webpack server, a streaming API server, and Sidekiq. Of course, you can run any of those things stand-alone depending on your needs.</p>
+<h2 id=testing>
+Testing
+<a class=anchor href=#testing>#</a>
+</h2>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Command</th>
+<th style=text-align:left>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>rspec</code></td>
+<td style=text-align:left>Run the Ruby test suite</td>
+</tr>
+<tr>
+<td style=text-align:left><code>yarn run test</code></td>
+<td style=text-align:left>Run the JavaScript test suite</td>
+</tr>
+<tr>
+<td style=text-align:left><code>rubocop</code></td>
+<td style=text-align:left>Check the Ruby code for conformance with our code style</td>
+</tr>
+</tbody>
+</table>
+</article>
+<footer class=book-footer>
+<div class="flex flex-wrap justify-between">
+</div>
+<script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+</footer>
+<div class=book-comments>
+</div>
+<label for=menu-control class="hidden book-menu-overlay"></label>
+</div>
+<aside class=book-toc>
+<div class=book-toc-content>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#pre-requisites>Pre-requisites</a>
+<ul>
+<li><a href=#system-repositorie>System repositorie</a></li>
+<li><a href=#system-packages>System packages</a></li>
+<li><a href=#installing-ruby>Installing Ruby</a></li>
+</ul>
+</li>
+<li><a href=#setup>Setup</a></li>
+<li><a href=#running>Running</a></li>
+<li><a href=#testing>Testing</a></li>
+</ul>
+</nav>
+</div>
+</aside>
+</main>
+</body>
+</html>
