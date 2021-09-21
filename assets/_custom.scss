@@ -1,0 +1,34 @@
+.book-brand{
+    img {
+        height: 3em;
+        width: auto;
+    }
+}
+
+figcaption {
+    margin-top: -20px;
+    font-size: 8pt;
+}
+
+#right {
+    float: right;
+    width: 300px;
+    padding: 10px;
+}
+
+.social {
+    right: 10px;
+    font-size: 24pt;
+    padding: 20px;
+    position: absolute;
+    opacity: .5;
+    transition: 0.3s;
+}
+
+.social:hover {
+    opacity: 1;
+}
+
+* {
+    outline: 0 !important;
+}

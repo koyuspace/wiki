@@ -1,0 +1,15 @@
+baseURL = 'https://wiki.koyu.space'
+languageCode = 'en'
+title = 'koyu.space Wiki'
+theme = 'book'
+enableGitInfo = true
+BookRepo = 'https://github.com/koyuspace/wiki'
+
+[params]
+  BookTheme = 'dark'
+  BookLogo = 'logo.svg'
+
+[markup]
+  defaultMarkdownHandler = 'goldmark'
+    [markup.goldmark.renderer]
+        unsafe = true
