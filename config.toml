@@ -8,6 +8,7 @@ BookRepo = 'https://github.com/koyuspace/wiki'
 [params]
   BookTheme = 'dark'
   BookLogo = 'logo.svg'
+  BookToC = false
 
 [markup]
   defaultMarkdownHandler = 'goldmark'

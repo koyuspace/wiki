@@ -3,6 +3,12 @@
         height: 3em;
         width: auto;
     }
+    @media (max-width:800px) {
+        margin-left: -32px;
+    }
+    a span {
+        display: none;
+    }
 }
 
 figcaption {
@@ -17,12 +23,14 @@ figcaption {
 }
 
 .social {
-    right: 10px;
+    right: 0px;
+    top: -9px;
     font-size: 24pt;
     padding: 20px;
     position: absolute;
     opacity: .5;
     transition: 0.3s;
+    z-index: 1;
 }
 
 .social:hover {
