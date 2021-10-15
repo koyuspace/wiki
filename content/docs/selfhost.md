@@ -225,7 +225,7 @@ certbot --nginx -d example.com
 
 This will obtain the certificate, automatically update `/etc/nginx/sites-available/mastodon` to use the new certificate, and reload nginx for the changes to take effect.
 
-At this point you should be able to visit your domain in the browser and see the elephant hitting the computer screen error page. This is because we haven’t started the koyu.space process yet.
+At this point you should be able to visit your domain in the browser and see the melting koyu.space icon error page. This is because we haven’t started the koyu.space process yet.
 
 ### Setting up systemd services {#setting-up-systemd-services}
 
