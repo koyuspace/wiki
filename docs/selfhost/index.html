@@ -7,13 +7,13 @@
 <meta property="og:description" content="Instructional guide on creating your own koyu.space-powered website.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://wiki.koyu.space/docs/selfhost/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2021-09-30T19:45:04+02:00">
+<meta property="article:modified_time" content="2021-10-15T11:16:35+02:00">
 <title>Self-hosting | koyu.space Wiki</title>
 <link rel=manifest href=/manifest.json>
 <link rel=icon href=/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/book.min.4298a1d99ee89e7817ba60fccc7e6d3d46f94fab28b676cbdd0a78f61817daf3.css integrity="sha256-Qpih2Z7onngXumD8zH5tPUb5T6sotnbL3Qp49hgX2vM=" crossorigin=anonymous>
 <script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.c53c695b283e82840126024842b63e7e6ae267b6d6ce4e4ccb8e52a56d3bf629.js integrity="sha256-xTxpWyg+goQBJgJIQrY+fmriZ7bWzk5My45SpW079ik=" crossorigin=anonymous></script>
+<script defer src=/en.search.min.b995f1bfa0863073ac84fb8fd8e2c286eedfab38f1939faa0f267542fea09a07.js integrity="sha256-uZXxv6CGMHOshPuP2OLChu7fqzjxk5+qDyZ1Qv6gmgc=" crossorigin=anonymous></script>
 <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin=anonymous>
 <a href=https://github.com/koyuspace/wiki class=social target=_blank><i class="fa fa-github" aria-hidden=true></i></a>
 </head>
@@ -248,7 +248,7 @@ Acquiring a SSL certificate
 <p>We’ll use Let’s Encrypt to get a free SSL certificate:</p>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>certbot --nginx -d example.com
 </code></pre></div><p>This will obtain the certificate, automatically update <code>/etc/nginx/sites-available/mastodon</code> to use the new certificate, and reload nginx for the changes to take effect.</p>
-<p>At this point you should be able to visit your domain in the browser and see the elephant hitting the computer screen error page. This is because we haven’t started the koyu.space process yet.</p>
+<p>At this point you should be able to visit your domain in the browser and see the melting koyu.space icon error page. This is because we haven’t started the koyu.space process yet.</p>
 <h3 id=setting-up-systemd-services>
 Setting up systemd services
 <a class=anchor href=#setting-up-systemd-services>#</a>
