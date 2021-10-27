@@ -162,7 +162,7 @@ su - mastodon
 Use git to download the latest stable release of koyu.space:
 
 ```bash
-git clone https://github.com/koyuspace/mastodon live && cd live
+git clone https://github.com/koyuspace/mastodon --recurse-submodules live && cd live
 ```
 
 #### Installing the last dependencies {#installing-the-last-dependencies}
