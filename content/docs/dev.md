@@ -53,7 +53,7 @@ git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 Once this is done, we can install the correct Ruby version:
 
 ```bash
-RUBY_CONFIGURE_OPTS=--with-jemalloc rbenv install 2.7.2
+RUBY_CONFIGURE_OPTS=--with-jemalloc rbenv install 2.7.4
 rbenv global 2.7.4
 ```
 
@@ -83,7 +83,7 @@ This will create the necessary Postgres user with the permission to create a dat
 
 ## Running
 
-There are multiple processes that need to be run for the full set of Mastodon’s functionality, although they can be selectively omitted. To run all of them with just one command, you can install Foreman with `gem install foreman --no-document` and then use:
+There are multiple processes that need to be run for the full set of koyu.space functionality, although they can be selectively omitted. To run all of them with just one command, you can install Foreman with `gem install foreman --no-document` and then use:
 
 ```text
 foreman start

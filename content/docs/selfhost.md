@@ -149,7 +149,7 @@ CREATE USER mastodon CREATEDB;
 
 Done!
 
-### Setting up koyu.space {#setting-up-mastodon}
+### Setting up koyu.space {#setting-up-koyuspace}
 
 It is time to download the koyu.space code. Switch to the mastodon user:
 
