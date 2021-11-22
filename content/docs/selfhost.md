@@ -107,7 +107,7 @@ Once this is done, we can install the correct Ruby version:
 
 ```bash
 RUBY_CONFIGURE_OPTS=--with-jemalloc rbenv install 3.0.2
-rbenv global 3.02
+rbenv global 3.0.2
 ```
 
 We’ll also need to install bundler:
