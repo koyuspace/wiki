@@ -4,4 +4,4 @@ title: Home
 
 # Welcome to the koyu.space Wiki
 
-This site should serve as a knowledge base for koyu.space users and admins.
+koyu.space is a global network of talented people delivering internet services to you. All we do is free and open-source software.
