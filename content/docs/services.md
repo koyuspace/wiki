@@ -8,8 +8,8 @@ We currently got the following services:
 
 * [koyu.space](https://koyu.space)
 * [koyu.space Nitter](https://nitter.koyu.space)
-* [koyu.space Gemini](gemini://koyu.space)
-* Mumble server at [mumble.koyu.space](https://mumble.koyu.space)
+* [koyu.space Gemini](https://gem.koyu.space)
+* koyu.space TF2
 
 Services with closed registrations are request-only due to limited resources.
 
