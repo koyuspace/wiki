@@ -17,6 +17,20 @@ Services with closed registrations are request-only due to limited resources.
 
 We also offer free subdomains for users on koyu.space! Just e-mail us your A record or CNAME record along with your preffered subdomain and we will handle the rest. Please note that we don't take any responsibility for user subdomains except limited by law.
 
+## Webhosting
+
+Webhosting (static content only) is available for koyu.space members which means:
+
+* You are more than 90 days on the server
+* You either donated more than once or gained moderator/admin privileges
+* You are in the Telegram group or on IRC
+
+What you get:
+
+* FTP access to your own webspace
+* Your own subdomain
+* A colored name on koyu.space
+
 ## Chat
 
 We're also chatting over [Telegram](https://t.me/+xIh9r2VqrD9mYmJk) and Libera.chat (#koyu). Matrix users can use the Libera.chat IRC bridge to connect. Note that these channels are public and not meant for sensitive topics or support. Please use support@koyu.space if you have questions regarding your account or file a complaint if you received a strike using your account.
