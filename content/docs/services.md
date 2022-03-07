@@ -31,6 +31,11 @@ What you get:
 * Your own subdomain
 * A colored name on koyu.space
 
+Rules:
+
+* Fair use
+* No illegal content
+
 ## Chat
 
 We're also chatting over [Telegram](https://t.me/+xIh9r2VqrD9mYmJk) and Libera.chat (#koyu). Matrix users can use the Libera.chat IRC bridge to connect. Note that these channels are public and not meant for sensitive topics or support. Please use support@koyu.space if you have questions regarding your account or file a complaint if you received a strike using your account.
