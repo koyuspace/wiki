@@ -9,7 +9,8 @@ We currently got the following services:
 * [koyu.space](https://koyu.space)
 * [koyu.space Nitter](https://nitter.koyu.space)
 * [koyu.space Gemini](https://gem.koyu.space)
-* [koyu.space GemProxy](https://gemproxy.koyu.space)
+* [GemProxy](https://gemproxy.koyu.space)
+* [Nordcast](https://nordcast.koyu.space)
 * koyu.space TF2
 
 <a href="https://www.gametracker.com/server_info/45.142.114.226:27015/" target="_blank"><img src="https://cache.gametracker.com/server_info/45.142.114.226:27015/b_560_95_1.png" border="0" width="560" height="95" alt=""/></a>
