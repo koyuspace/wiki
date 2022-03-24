@@ -1,92 +1,20 @@
-<!doctype html><html lang=en dir=ltr>
-<head>
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="Instructional guide on creating your own koyu.space-powered website.">
-<meta name=theme-color content="#FFFFFF"><meta property="og:title" content="Self-hosting">
-<meta property="og:description" content="Instructional guide on creating your own koyu.space-powered website.">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://wiki.koyu.space/docs/selfhost/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2021-12-13T14:08:13+01:00">
-<title>Self-hosting | koyu.space Wiki</title><link rel=manifest href=/manifest.json>
-<link rel=icon href=/favicon.png type=image/x-icon>
-<link rel=stylesheet href=/book.min.bccdb67915c95ec6d35638c7ad8b177a32ad595da656e5ed08eb55d4eea26977.css integrity="sha256-vM22eRXJXsbTVjjHrYsXejKtWV2mVuXtCOtV1O6iaXc=" crossorigin=anonymous>
-<script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.daba351e5df39c3951f9f7c5c4926e55952a0d3dc3935e1860b42ace51785738.js integrity="sha256-2ro1Hl3znDlR+ffFxJJuVZUqDT3Dk14YYLQqzlF4Vzg=" crossorigin=anonymous></script>
-<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin=anonymous>
-<a href=https://github.com/koyuspace/wiki class=social target=_blank><i class="fa fa-github" aria-hidden=true></i></a>
-</head><body dir=ltr>
-<input type=checkbox class="hidden toggle" id=menu-control>
-<input type=checkbox class="hidden toggle" id=toc-control>
-<main class="container flex">
-<aside class=book-menu>
-<div class=book-menu-content>
-<nav>
-<h2 class=book-brand>
-<a class="flex align-center" href=/><img src=/logo.svg alt=Logo><span>koyu.space Wiki</span>
-</a>
-</h2><div class=book-search>
-<input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/>
-<div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul>
-<li>
-<a href=https://wiki.koyu.space/docs/events/>Events</a>
-</li><li>
-<a href=https://wiki.koyu.space/docs/verification/>How can I get verified</a>
-</li><li>
-<a href=https://wiki.koyu.space/docs/streaming/>Livestreaming on koyu.space</a>
-</li><li>
-<a href=https://wiki.koyu.space/docs/selfhost/ class=active>Self-hosting</a>
-</li><li>
-<a href=https://wiki.koyu.space/docs/services/>Services</a>
-</li><li>
-<a href=https://wiki.koyu.space/docs/dev/>Setting up a dev environment</a>
-</li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
-</div></aside><div class=book-page>
-<header class=book-header>
-<div class="flex align-center justify-between">
-<label for=menu-control>
-<img src=/svg/menu.svg class=book-icon alt=Menu>
-</label>
+<!doctype html><html lang=en dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Instructional guide on creating your own koyu.space-powered website."><meta name=theme-color content="#FFFFFF"><meta property="og:title" content="Self-hosting"><meta property="og:description" content="Instructional guide on creating your own koyu.space-powered website."><meta property="og:type" content="article"><meta property="og:url" content="https://wiki.koyu.space/docs/selfhost/"><meta property="article:section" content="docs"><meta property="article:modified_time" content="2021-12-13T14:08:13+01:00"><title>Self-hosting | koyu.space Wiki</title><link rel=manifest href=/manifest.json><link rel=icon href=/favicon.png type=image/x-icon><link rel=stylesheet href=/book.min.bccdb67915c95ec6d35638c7ad8b177a32ad595da656e5ed08eb55d4eea26977.css integrity="sha256-vM22eRXJXsbTVjjHrYsXejKtWV2mVuXtCOtV1O6iaXc=" crossorigin=anonymous><script defer src=/flexsearch.min.js></script>
+<script defer src=/en.search.min.2d4bc800a89d9e59349f80984563a53bf3197aa9f029a7b47ad8c5b863f12126.js integrity="sha256-LUvIAKidnlk0n4CYRWOlO/MZeqnwKae0etjFuGPxISY=" crossorigin=anonymous></script>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin=anonymous><a href=https://github.com/koyuspace/wiki class=social target=_blank><i class="fa fa-github" aria-hidden=true></i></a></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/><img src=/logo.svg alt=Logo><span>koyu.space Wiki</span></a></h2><div class=book-search><input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul><li><a href=https://wiki.koyu.space/docs/verification/>How can I get verified</a></li><li><a href=https://wiki.koyu.space/docs/streaming/>Livestreaming on koyu.space</a></li><li><a href=https://wiki.koyu.space/docs/selfhost/ class=active>Self-hosting</a></li><li><a href=https://wiki.koyu.space/docs/services/>Services</a></li><li><a href=https://wiki.koyu.space/docs/dev/>Setting up a dev environment</a></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu></label>
 <strong>Self-hosting</strong>
-<label for=toc-control>
-</label>
-</div></header><article class=markdown><h1 id=self-hosting-koyuspace>
-Self-hosting koyu.space
-<a class=anchor href=#self-hosting-koyuspace>#</a>
-</h1><h2 id=why-would-you-want-to-run-your-own-koyuspace-server>
-Why would you want to run your own koyu.space server?
-<a class=anchor href=#why-would-you-want-to-run-your-own-koyuspace-server>#</a>
-</h2><ul>
-<li>Absolute control over your own voice on the web, not subject to anyone else&rsquo;s rules or whims. Your server is your property, with your rules. It will exist as long as you want it to exist.</li><li>You are <em>not</em> isolated on your own server. You can follow anyone on any other server, and they can follow you and you can exchange messages just like if you were on the same server.</li><li>You can either limit sign-ups to be the only one on the server and run it like personal (micro)blog, maintain an invite-only community for family or friends or run a server anyone can sign up on, it&rsquo;s up to you!</li></ul><blockquote class="book-hint warning">
-Please mind that providing a public internet service involves moderation work and community management, and that such work becomes more complicated the larger your server grows.
-</blockquote><h2 id=so-you-want-to-run-your-own-koyuspace-server>
-So you want to run your own koyu.space server
-<a class=anchor href=#so-you-want-to-run-your-own-koyuspace-server>#</a>
-</h2><p>Here is what you need:</p><ul>
-<li>
-<p>A <strong>domain name</strong>. This is how you and others will access your server and how you and your users will be identified on the network.</p><p><strong>How to get</strong>: Namecheap, Gandi, any of the infinite number of domain name registrars. Comes with a yearly cost that varies depending on domain name choice.</p></li><li>
-<p>A <strong>VPS</strong>. Something that will run the koyu.space code that will always be connected to the internet.</p><p><strong>How to get</strong>: DigitalOcean, Hetzner, Exoscale, Scaleway, any of the infinite number of hosting providers. Comes with a monthly or yearly cost that varies depending on hardware specifications.</p></li><li>
-<p>An <strong>e-mail provider</strong>. koyu.space needs to send confirmation links and various notifications through e-mail, and hosting your own SMTP server, while possible, is much more difficult to do reliably than to simply use a third-party provider.</p><p><strong>How to get</strong>: Mailgun, SparkPost, Postmark, Sendgrid, any of the infinite number of e-mail hosting providers that expose a SMTP API. Comes with a monthly cost based on volume of e-mails sent.</p></li><li>
-<p>Optional: <strong>Object storage provider</strong>. koyu.space can save files that you and your users upload on the hard disk drive of the VPS it runs on, however, the hard disk drive is usually not infinite and difficult to upgrade later. An object storage provider gives you practically infinite metered file storage.</p><p><strong>How to get</strong>: Amazon S3, Exoscale, Wasabi, Google Cloud, anything that exposes either an S3-compatible or OpenStack Swift-compatible API. Comes with a monthly cost based on the amount of files stored as well as how often they are accessed.</p></li></ul><p>That however does assume a single-machine setup. koyu.space scales quite well horizontally. If your needs outgrow the capacity of a single machine, koyu.space can be divided into multiple app servers, background workers, multiple Redis backends, PostgreSQL replicas.</p><p>If you&rsquo;re interested in installing everything on your own, proceed reading.</p><h2 id=pre-requisites>
-Pre-requisites
-<a class=anchor href=#pre-requisites>#</a>
-</h2><ul>
-<li>A machine running <strong>Ubuntu 20.04</strong> or higher that you have root access to</li><li>A <strong>domain name</strong> (or a subdomain) for the koyu.space server, e.g. <code>example.com</code></li><li>An e-mail delivery service or other <strong>SMTP server</strong></li></ul><p>You will be running the commands as root. If you aren’t already root, switch to root:</p><h3 id=system-repositories>
-System repositories
-<a class=anchor href=#system-repositories>#</a>
-</h3><p>Make sure curl is installed first:</p><h4 id=node-js>
-Node.js
-<a class=anchor href=#node-js>#</a>
-</h4><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>curl -sL https://deb.nodesource.com/setup_14.x | bash -
-</span></span></code></pre></div><h4 id=yarn>
-Yarn
-<a class=anchor href=#yarn>#</a>
-</h4><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
+<label for=toc-control></label></div></header><article class=markdown><h1 id=self-hosting-koyuspace>Self-hosting koyu.space
+<a class=anchor href=#self-hosting-koyuspace>#</a></h1><h2 id=why-would-you-want-to-run-your-own-koyuspace-server>Why would you want to run your own koyu.space server?
+<a class=anchor href=#why-would-you-want-to-run-your-own-koyuspace-server>#</a></h2><ul><li>Absolute control over your own voice on the web, not subject to anyone else&rsquo;s rules or whims. Your server is your property, with your rules. It will exist as long as you want it to exist.</li><li>You are <em>not</em> isolated on your own server. You can follow anyone on any other server, and they can follow you and you can exchange messages just like if you were on the same server.</li><li>You can either limit sign-ups to be the only one on the server and run it like personal (micro)blog, maintain an invite-only community for family or friends or run a server anyone can sign up on, it&rsquo;s up to you!</li></ul><blockquote class="book-hint warning">Please mind that providing a public internet service involves moderation work and community management, and that such work becomes more complicated the larger your server grows.</blockquote><h2 id=so-you-want-to-run-your-own-koyuspace-server>So you want to run your own koyu.space server
+<a class=anchor href=#so-you-want-to-run-your-own-koyuspace-server>#</a></h2><p>Here is what you need:</p><ul><li><p>A <strong>domain name</strong>. This is how you and others will access your server and how you and your users will be identified on the network.</p><p><strong>How to get</strong>: Namecheap, Gandi, any of the infinite number of domain name registrars. Comes with a yearly cost that varies depending on domain name choice.</p></li><li><p>A <strong>VPS</strong>. Something that will run the koyu.space code that will always be connected to the internet.</p><p><strong>How to get</strong>: DigitalOcean, Hetzner, Exoscale, Scaleway, any of the infinite number of hosting providers. Comes with a monthly or yearly cost that varies depending on hardware specifications.</p></li><li><p>An <strong>e-mail provider</strong>. koyu.space needs to send confirmation links and various notifications through e-mail, and hosting your own SMTP server, while possible, is much more difficult to do reliably than to simply use a third-party provider.</p><p><strong>How to get</strong>: Mailgun, SparkPost, Postmark, Sendgrid, any of the infinite number of e-mail hosting providers that expose a SMTP API. Comes with a monthly cost based on volume of e-mails sent.</p></li><li><p>Optional: <strong>Object storage provider</strong>. koyu.space can save files that you and your users upload on the hard disk drive of the VPS it runs on, however, the hard disk drive is usually not infinite and difficult to upgrade later. An object storage provider gives you practically infinite metered file storage.</p><p><strong>How to get</strong>: Amazon S3, Exoscale, Wasabi, Google Cloud, anything that exposes either an S3-compatible or OpenStack Swift-compatible API. Comes with a monthly cost based on the amount of files stored as well as how often they are accessed.</p></li></ul><p>That however does assume a single-machine setup. koyu.space scales quite well horizontally. If your needs outgrow the capacity of a single machine, koyu.space can be divided into multiple app servers, background workers, multiple Redis backends, PostgreSQL replicas.</p><p>If you&rsquo;re interested in installing everything on your own, proceed reading.</p><h2 id=pre-requisites>Pre-requisites
+<a class=anchor href=#pre-requisites>#</a></h2><ul><li>A machine running <strong>Ubuntu 20.04</strong> or higher that you have root access to</li><li>A <strong>domain name</strong> (or a subdomain) for the koyu.space server, e.g. <code>example.com</code></li><li>An e-mail delivery service or other <strong>SMTP server</strong></li></ul><p>You will be running the commands as root. If you aren’t already root, switch to root:</p><h3 id=system-repositories>System repositories
+<a class=anchor href=#system-repositories>#</a></h3><p>Make sure curl is installed first:</p><h4 id=node-js>Node.js
+<a class=anchor href=#node-js>#</a></h4><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>curl -sL https://deb.nodesource.com/setup_14.x | bash -
+</span></span></code></pre></div><h4 id=yarn>Yarn
+<a class=anchor href=#yarn>#</a></h4><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
 </span></span><span style=display:flex><span>echo <span style=color:#e6db74>&#34;deb https://dl.yarnpkg.com/debian/ stable main&#34;</span> | tee /etc/apt/sources.list.d/yarn.list
-</span></span></code></pre></div><h3 id=system-packages>
-System packages
-<a class=anchor href=#system-packages>#</a>
-</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>apt update
+</span></span></code></pre></div><h3 id=system-packages>System packages
+<a class=anchor href=#system-packages>#</a></h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>apt update
 </span></span><span style=display:flex><span>apt install -y <span style=color:#ae81ff>\
 </span></span></span><span style=display:flex><span><span style=color:#ae81ff></span>  imagemagick ffmpeg libpq-dev libxml2-dev libxslt1-dev file git-core <span style=color:#ae81ff>\
 </span></span></span><span style=display:flex><span><span style=color:#ae81ff></span>  g++ libprotobuf-dev protobuf-compiler pkg-config nodejs gcc autoconf <span style=color:#ae81ff>\
@@ -94,10 +22,8 @@ System packages
 </span></span></span><span style=display:flex><span><span style=color:#ae81ff></span>  zlib1g-dev libncurses5-dev libffi-dev libgdbm-dev <span style=color:#ae81ff>\
 </span></span></span><span style=display:flex><span><span style=color:#ae81ff></span>  nginx redis-server redis-tools postgresql postgresql-contrib <span style=color:#ae81ff>\
 </span></span></span><span style=display:flex><span><span style=color:#ae81ff></span>  certbot python3-certbot-nginx yarn libidn11-dev libicu-dev libjemalloc-dev
-</span></span></code></pre></div><h3 id=installing-ruby>
-Installing Ruby
-<a class=anchor href=#installing-ruby>#</a>
-</h3><p>We will be using rbenv to manage Ruby versions, because it’s easier to get the right versions and to update once a newer release comes out. rbenv must be installed for a single Linux user, therefore, first we must create the user koyu.space will be running as:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>adduser --disabled-login mastodon
+</span></span></code></pre></div><h3 id=installing-ruby>Installing Ruby
+<a class=anchor href=#installing-ruby>#</a></h3><p>We will be using rbenv to manage Ruby versions, because it’s easier to get the right versions and to update once a newer release comes out. rbenv must be installed for a single Linux user, therefore, first we must create the user koyu.space will be running as:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>adduser --disabled-login mastodon
 </span></span></code></pre></div><p>We can then switch to the user:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>su - mastodon
 </span></span></code></pre></div><p>And proceed to install rbenv and rbenv-build:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 </span></span><span style=display:flex><span>cd ~/.rbenv <span style=color:#f92672>&amp;&amp;</span> src/configure <span style=color:#f92672>&amp;&amp;</span> make -C src
@@ -109,65 +35,33 @@ Installing Ruby
 </span></span><span style=display:flex><span>rbenv global 3.0.3
 </span></span></code></pre></div><p>We’ll also need to install bundler:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>gem install bundler --no-document
 </span></span></code></pre></div><p>Return to the root user:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>exit
-</span></span></code></pre></div><h2 id=setup>
-Setup
-<a class=anchor href=#setup>#</a>
-</h2><h3 id=setting-up-postgresql>
-Setting up PostgreSQL
-<a class=anchor href=#setting-up-postgresql>#</a>
-</h3><h4 id=performance-configuration-optional>
-Performance configuration (optional)
-<a class=anchor href=#performance-configuration-optional>#</a>
-</h4><p>For optimal performance, you may use <a href=https://pgtune.leopard.in.ua/#/ target=_blank rel="noreferrer noopener">pgTune</a> to generate an appropriate configuration and edit values in <code>/etc/postgresql/9.6/main/postgresql.conf</code> before restarting PostgreSQL with <code>systemctl restart postgresql</code></p><h4 id=creating-a-user>
-Creating a user
-<a class=anchor href=#creating-a-user>#</a>
-</h4><p>You will need to create a PostgreSQL user that koyu.space could use. It is easiest to go with “ident” authentication in a simple setup, i.e. the PostgreSQL user does not have a separate password and can be used by the Linux user with the same username.</p><p>Open the prompt:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>sudo -u postgres psql
+</span></span></code></pre></div><h2 id=setup>Setup
+<a class=anchor href=#setup>#</a></h2><h3 id=setting-up-postgresql>Setting up PostgreSQL
+<a class=anchor href=#setting-up-postgresql>#</a></h3><h4 id=performance-configuration-optional>Performance configuration (optional)
+<a class=anchor href=#performance-configuration-optional>#</a></h4><p>For optimal performance, you may use <a href=https://pgtune.leopard.in.ua/#/ target=_blank rel="noreferrer noopener">pgTune</a> to generate an appropriate configuration and edit values in <code>/etc/postgresql/9.6/main/postgresql.conf</code> before restarting PostgreSQL with <code>systemctl restart postgresql</code></p><h4 id=creating-a-user>Creating a user
+<a class=anchor href=#creating-a-user>#</a></h4><p>You will need to create a PostgreSQL user that koyu.space could use. It is easiest to go with “ident” authentication in a simple setup, i.e. the PostgreSQL user does not have a separate password and can be used by the Linux user with the same username.</p><p>Open the prompt:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>sudo -u postgres psql
 </span></span></code></pre></div><p>In the prompt, execute:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>CREATE</span> <span style=color:#66d9ef>USER</span> mastodon <span style=color:#66d9ef>CREATEDB</span>;
 </span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010>\</span>q
-</span></span></code></pre></div><p>Done!</p><h3 id=setting-up-koyuspace>
-Setting up koyu.space
-<a class=anchor href=#setting-up-koyuspace>#</a>
-</h3><p>It is time to download the koyu.space code. Switch to the mastodon user:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>su - mastodon
-</span></span></code></pre></div><h4 id=checking-out-the-code>
-Checking out the code
-<a class=anchor href=#checking-out-the-code>#</a>
-</h4><p>Use git to download the latest stable release of koyu.space:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>git clone https://github.com/koyuspace/mastodon --recurse-submodules live <span style=color:#f92672>&amp;&amp;</span> cd live
-</span></span></code></pre></div><h4 id=installing-the-last-dependencies>
-Installing the last dependencies
-<a class=anchor href=#installing-the-last-dependencies>#</a>
-</h4><p>Now to install Ruby and JavaScript dependencies:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>bundle config deployment <span style=color:#e6db74>&#39;true&#39;</span>
+</span></span></code></pre></div><p>Done!</p><h3 id=setting-up-koyuspace>Setting up koyu.space
+<a class=anchor href=#setting-up-koyuspace>#</a></h3><p>It is time to download the koyu.space code. Switch to the mastodon user:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>su - mastodon
+</span></span></code></pre></div><h4 id=checking-out-the-code>Checking out the code
+<a class=anchor href=#checking-out-the-code>#</a></h4><p>Use git to download the latest stable release of koyu.space:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>git clone https://github.com/koyuspace/mastodon --recurse-submodules live <span style=color:#f92672>&amp;&amp;</span> cd live
+</span></span></code></pre></div><h4 id=installing-the-last-dependencies>Installing the last dependencies
+<a class=anchor href=#installing-the-last-dependencies>#</a></h4><p>Now to install Ruby and JavaScript dependencies:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>bundle config deployment <span style=color:#e6db74>&#39;true&#39;</span>
 </span></span><span style=display:flex><span>bundle config without <span style=color:#e6db74>&#39;development test&#39;</span>
 </span></span><span style=display:flex><span>bundle install -j<span style=color:#66d9ef>$(</span>getconf _NPROCESSORS_ONLN<span style=color:#66d9ef>)</span>
 </span></span><span style=display:flex><span>yarn install --pure-lockfile
-</span></span></code></pre></div><blockquote class="book-hint info">
-The two <code>bundle config</code> commands are only needed the first time you&rsquo;re installing dependencies. If you&rsquo;re going to be updating or re-installing dependencies later, just <code>bundle install</code> will be enough.
-</blockquote><h4 id=generating-a-configuration>
-Generating a configuration
-<a class=anchor href=#generating-a-configuration>#</a>
-</h4><p>Run the interactive setup wizard:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>RAILS_ENV<span style=color:#f92672>=</span>production bundle exec rake mastodon:setup
-</span></span></code></pre></div><p>This will:</p><ul>
-<li>Create a configuration file</li><li>Run asset precompilation</li><li>Create the database schema</li></ul><p>The configuration file is saved as <code>.env.production</code>. You can review and edit it to your liking. Refer to the <a href=https://github.com/koyuspace/mastodon/blob/main/.env.production.sample target=_blank rel="noreferrer noopener">sample configuration file</a>.</p><p>You’re done with the mastodon user for now, so switch back to root:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>exit
-</span></span></code></pre></div><h3 id=setting-up-nginx>
-Setting up nginx
-<a class=anchor href=#setting-up-nginx>#</a>
-</h3><p>Copy the configuration template for nginx from the koyu.space directory:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>cp /home/mastodon/live/dist/nginx.conf /etc/nginx/sites-available/mastodon
+</span></span></code></pre></div><blockquote class="book-hint info">The two <code>bundle config</code> commands are only needed the first time you&rsquo;re installing dependencies. If you&rsquo;re going to be updating or re-installing dependencies later, just <code>bundle install</code> will be enough.</blockquote><h4 id=generating-a-configuration>Generating a configuration
+<a class=anchor href=#generating-a-configuration>#</a></h4><p>Run the interactive setup wizard:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>RAILS_ENV<span style=color:#f92672>=</span>production bundle exec rake mastodon:setup
+</span></span></code></pre></div><p>This will:</p><ul><li>Create a configuration file</li><li>Run asset precompilation</li><li>Create the database schema</li></ul><p>The configuration file is saved as <code>.env.production</code>. You can review and edit it to your liking. Refer to the <a href=https://github.com/koyuspace/mastodon/blob/main/.env.production.sample target=_blank rel="noreferrer noopener">sample configuration file</a>.</p><p>You’re done with the mastodon user for now, so switch back to root:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>exit
+</span></span></code></pre></div><h3 id=setting-up-nginx>Setting up nginx
+<a class=anchor href=#setting-up-nginx>#</a></h3><p>Copy the configuration template for nginx from the koyu.space directory:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>cp /home/mastodon/live/dist/nginx.conf /etc/nginx/sites-available/mastodon
 </span></span><span style=display:flex><span>ln -s /etc/nginx/sites-available/mastodon /etc/nginx/sites-enabled/mastodon
-</span></span></code></pre></div><p>Then edit <code>/etc/nginx/sites-available/mastodon</code> to replace <code>example.com</code> with your own domain name, and make any other adjustments you might need.</p><p>Reload nginx for the changes to take effect:</p><h3 id=acquiring-a-ssl-certificate>
-Acquiring a SSL certificate
-<a class=anchor href=#acquiring-a-ssl-certificate>#</a>
-</h3><p>We’ll use Let’s Encrypt to get a free SSL certificate:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>certbot --nginx -d example.com
-</span></span></code></pre></div><p>This will obtain the certificate, automatically update <code>/etc/nginx/sites-available/mastodon</code> to use the new certificate, and reload nginx for the changes to take effect.</p><p>At this point you should be able to visit your domain in the browser and see the melting koyu.space icon error page. This is because we haven’t started the koyu.space process yet.</p><h3 id=setting-up-systemd-services>
-Setting up systemd services
-<a class=anchor href=#setting-up-systemd-services>#</a>
-</h3><p>Copy the systemd service templates from the koyu.space directory:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>cp /home/mastodon/live/dist/mastodon-*.service /etc/systemd/system/
+</span></span></code></pre></div><p>Then edit <code>/etc/nginx/sites-available/mastodon</code> to replace <code>example.com</code> with your own domain name, and make any other adjustments you might need.</p><p>Reload nginx for the changes to take effect:</p><h3 id=acquiring-a-ssl-certificate>Acquiring a SSL certificate
+<a class=anchor href=#acquiring-a-ssl-certificate>#</a></h3><p>We’ll use Let’s Encrypt to get a free SSL certificate:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>certbot --nginx -d example.com
+</span></span></code></pre></div><p>This will obtain the certificate, automatically update <code>/etc/nginx/sites-available/mastodon</code> to use the new certificate, and reload nginx for the changes to take effect.</p><p>At this point you should be able to visit your domain in the browser and see the melting koyu.space icon error page. This is because we haven’t started the koyu.space process yet.</p><h3 id=setting-up-systemd-services>Setting up systemd services
+<a class=anchor href=#setting-up-systemd-services>#</a></h3><p>Copy the systemd service templates from the koyu.space directory:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>cp /home/mastodon/live/dist/mastodon-*.service /etc/systemd/system/
 </span></span></code></pre></div><p>If you deviated from the defaults at any point, check that the username and paths are correct:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>$EDITOR /etc/systemd/system/mastodon-*.service
 </span></span></code></pre></div><p>Finally, start and enable the new systemd services:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>systemctl daemon-reload
 </span></span><span style=display:flex><span>systemctl enable --now mastodon-web mastodon-sidekiq mastodon-streaming
-</span></span></code></pre></div><p>They will now automatically start at boot.</p><blockquote class="book-hint info">
-<strong>Hurray! This is it. You can visit your domain in the browser now!</strong>
-</blockquote></article><footer class=book-footer>
-<div class="flex flex-wrap justify-between">
-</div><script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
-</footer><div class=book-comments>
-</div><label for=menu-control class="hidden book-menu-overlay"></label>
-</div></main></body></html>
+</span></span></code></pre></div><p>They will now automatically start at boot.</p><blockquote class="book-hint info"><strong>Hurray! This is it. You can visit your domain in the browser now!</strong></blockquote></article><footer class=book-footer><div class="flex flex-wrap justify-between"></div><script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div></main></body></html>
