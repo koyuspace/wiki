@@ -5,11 +5,9 @@ description: Instructions on how to start developing for koyu.space.
 
 # Setting up a dev environment
 
-## Pre-requisites
+## Pre-requisites (Ubuntu 20.04+)
 
-* A machine running **Ubuntu 20.04** or later that you have root access to
-
-### System repositorie
+### System repositories
 
 #### Node.js
 
@@ -35,6 +33,20 @@ sudo apt install -y \
   zlib1g-dev libncurses5-dev libffi-dev libgdbm-dev \
   redis-server redis-tools postgresql postgresql-contrib \
   yarn libidn11-dev libicu-dev libjemalloc-dev
+```
+
+## Pre-requisites (Fedora)
+
+The above packages can be installed on Fedora as follows:
+
+```
+curl -sL https://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yum.repos.d/yarn.repo
+curl -sL https://rpm.nodesource.com/setup_12.x | sudo bash -
+sudo dnf install ImageMagick ffmpeg libpq libxml2 libxslt file git \
+  gcc protobuf-devel protobuf pkgconf-pkg-config nodejs autoconf \
+  bison make automake gcc-c++ openssl-devel libyaml readline-devel \
+  zlib-devel ncurses-devel libffi gdbm \
+  redis postgresql yarn libidn libicu jemalloc
 ```
 
 ### Installing Ruby
