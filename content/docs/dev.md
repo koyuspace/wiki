@@ -46,7 +46,7 @@ sudo dnf install ImageMagick ffmpeg libpq libxml2 libxslt file git \
   gcc protobuf-devel protobuf pkgconf-pkg-config nodejs autoconf \
   bison make automake gcc-c++ openssl-devel libyaml readline-devel \
   zlib-devel ncurses-devel libffi gdbm \
-  redis postgresql libpq-devel yarn libidn-devel libicu-devel jemalloc-devel
+  redis postgresql libpq-devel postgresql-server yarn libidn-devel libicu-devel jemalloc-devel
 ```
 
 ### Installing Ruby
