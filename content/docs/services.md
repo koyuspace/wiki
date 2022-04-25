@@ -41,7 +41,7 @@ E-Mail support@koyu.space and we'll sort out your request.
 
 ## Chat
 
-We're also chatting over [Telegram](https://t.me/+xIh9r2VqrD9mYmJk) and Libera.chat (#koyu). Matrix users can use the Libera.chat IRC bridge to connect. Note that these channels are public and not meant for sensitive topics or support. Please use support@koyu.space if you have questions regarding your account or file a complaint if you received a strike using your account.
+We're also chatting over [Telegram](https://t.me/+xIh9r2VqrD9mYmJk) and Libera.chat (#koyu). Matrix users can use the Libera.chat IRC bridge to connect. Right now the IRC bridge is broken, so please use Telegram instead. Note that these channels are public and not meant for sensitive topics or support. Please use support@koyu.space if you have questions regarding your account or file a complaint if you received a strike using your account.
 
 ## Announcements
 
