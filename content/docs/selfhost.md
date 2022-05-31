@@ -159,10 +159,10 @@ su - mastodon
 
 #### Checking out the code {#checking-out-the-code}
 
-Use git to download the latest stable release of koyu.space:
+Use git to download the latest version of koyu.space:
 
 ```bash
-git clone https://github.com/koyuspace/mastodon --recurse-submodules live && cd live
+git clone https://github.com/koyuspace/mastodon live && cd live
 ```
 
 #### Installing the last dependencies {#installing-the-last-dependencies}
