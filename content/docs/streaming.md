@@ -23,7 +23,7 @@ The admin dashboard can be accessed [here](https://stream.koyu.space/admin/).
 The credentials are the following:
 
 ```
-Stream URL: rtmp://stream.koyu.space/live/
+Stream URL: rtmp://stream.koyu.space:1935/live/
 Streaming key: <The key you got from koyu>
 ```
 
